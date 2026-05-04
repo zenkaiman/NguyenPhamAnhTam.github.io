@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <title>Salehub</title>
+</head>
+
+<body>
+    <svg class="social-sprite" aria-hidden="true" focusable="false">
+        <symbol id="icon-facebook" viewBox="0 0 24 24">
+            <path d="M14 8.4V6.7c0-.8.2-1.3 1.4-1.3H17V2.2c-.8-.1-1.6-.2-2.4-.2-2.4 0-4.1 1.5-4.1 4.2v2.2H7.8V12h2.7v10H14V12h2.8l.4-3.6H14z" />
+        </symbol>
+        <symbol id="icon-x" viewBox="0 0 24 24">
+            <path d="M13.9 10.5 21.3 2h-1.8l-6.4 7.3L8 2H2.1l7.8 11.1L2.1 22h1.8l6.8-7.8 5.4 7.8H22l-8.1-11.5zm-2.4 2.7-.8-1.1L4.4 3.3h2.8l5 7 .8 1.1 6.7 9.4h-2.8l-5.4-7.6z" />
+        </symbol>
+        <symbol id="icon-pinterest" viewBox="0 0 24 24">
+            <path d="M12.1 2C6.7 2 4 5.8 4 8.9c0 1.9.7 3.6 2.3 4.2.3.1.5 0 .6-.3l.2-.9c.1-.3.1-.4-.1-.7-.5-.6-.8-1.3-.8-2.3 0-2.8 2.1-5.3 5.5-5.3 3 0 4.7 1.8 4.7 4.3 0 3.2-1.4 5.9-3.5 5.9-1.2 0-2-1-1.7-2.2.3-1.4 1-2.9 1-3.9 0-.9-.5-1.7-1.5-1.7-1.2 0-2.1 1.2-2.1 2.9 0 1 .4 1.8.4 1.8l-1.5 6.2c-.4 1.8-.1 4 .0 4.2.1.1.2.1.3 0 .1-.2 1.7-2.1 2.2-3.9.2-.5.8-3.1.8-3.1.4.8 1.5 1.4 2.7 1.4 3.5 0 5.9-3.2 5.9-7.5C19.5 4.8 16.8 2 12.1 2z" />
+        </symbol>
+        <symbol id="icon-vimeo" viewBox="0 0 24 24">
+            <path d="M22 7.1c-.1 2.9-2.2 6.9-6.2 12-1.7 2.2-3.2 3.3-4.4 3.3-.8 0-1.4-.7-2-2.1L8.3 16 7.1 11.8c-.4-1.4-.9-2.1-1.4-2.1-.1 0-.6.3-1.6 1L3 9.4l1.7-1.5c1.5-1.3 2.6-2 3.4-2.1 1.8-.2 2.9 1.1 3.3 3.7.5 2.9.8 4.7 1 5.4.5 2.3 1.1 3.5 1.8 3.5.5 0 1.3-.8 2.3-2.5 1-1.6 1.6-2.9 1.7-3.7.2-1.4-.4-2.1-1.7-2.1-.6 0-1.2.1-1.8.4 1.2-3.9 3.5-5.7 6.8-5.6 2.4.1 3.5 1.5 3.5 4.2z" />
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24">
+            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8zm8.7 1.8a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" />
+        </symbol>
+    </svg>
+    <header class="site-header">
+        <div class="announcement d-none d-lg-flex">
+            <div class="socials">
+                <a href="#" aria-label="Facebook"><svg><use href="#icon-facebook"></use></svg></a>
+                <a href="#" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+                <a href="#" aria-label="Pinterest"><svg><use href="#icon-pinterest"></use></svg></a>
+                <a href="#" aria-label="Vimeo"><svg><use href="#icon-vimeo"></use></svg></a>
+                <a href="#" aria-label="Instagram"><svg><use href="#icon-instagram"></use></svg></a>
+            </div>
+            <p>Simply return it within 30 days for an exchange</p>
+        </div>
+
+        <input class="nav-toggle" id="nav-toggle" type="checkbox">
+        <nav class="main-nav">
+            <label class="menu-button d-lg-none" for="nav-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links left-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+
+            <a class="brand" href="#" aria-label="Salehub home">
+                <img src="public/images/logo_350x.png" alt="Salehub">
+            </a>
+
+            <div class="nav-actions">
+                <a class="search-action" href="#"><span class="icon">&#8981;</span><span>Search</span></a>
+                <a class="account-action d-none d-lg-inline-flex" href="#">Account</a>
+                <a class="cart-action" href="#"><span class="icon">&#128722;</span><span>My Cart</span><b>0</b></a>
+            </div>
+        </nav>
+
+        <div class="mobile-search d-lg-none">
+            <input type="search" placeholder="Search">
+            <span>&#8981;</span>
+        </div>
+
+        <div class="mobile-panel d-lg-none">
+            <a href="#">Home</a>
+            <a href="#">Pages</a>
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Blog</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="public/images/s-12-2_88fe0e5f-d292-47a5-b4e0-999af1eb9d6a_2048x.jpg"
+                alt="Denim jacket collection">
+            <button class="hero-arrow hero-prev" aria-label="Previous slide">&lsaquo;</button>
+            <button class="hero-arrow hero-next" aria-label="Next slide">&rsaquo;</button>
+            <div class="hero-copy">
+                <p>Finding for men</p>
+                <h1>Denim Jaket</h1>
+                <a class="shop-button" href="#">Shop The Collection</a>
+            </div>
+        </section>
+
+        <section class="black-section">
+            <div class="container-xl">
+                <div class="category-grid">
+                    <article class="category-card">
+                        <div class="image-wrap">
+                            <img src="public/images/img-1_7dd86fb4-81ac-4752-840a-f799986aa590_1080x.jpg"
+                                alt="Men denim jackets outfits">
+                            <a class="shop-button" href="#">Shop The Collection</a>
+                        </div>
+                        <h2>Denim Jacket Outfits</h2>
+                        <p>See our top style tips for jean jackets that are oversized, distressed, and embroidered.</p>
+                    </article>
+                    <article class="category-card">
+                        <div class="image-wrap">
+                            <img src="public/images/img-2_9c6b0dde-b59b-44ae-812c-0f74862db5dc_1080x.jpg"
+                                alt="Women's coats and jackets">
+                            <a class="shop-button" href="#">Shop The Collection</a>
+                        </div>
+                        <h2>Women's Coats & Jackets</h2>
+                        <p>Shop the latest women's coats and jackets from Salehub. Discover new trends and explore new
+                            arrivals.</p>
+                    </article>
+                    <article class="category-card">
+                        <div class="image-wrap">
+                            <img src="public/images/img-3_d0d56b80-3fd9-4b23-86d5-8d644d12f701_1080x.jpg"
+                                alt="T-shirt collection">
+                            <a class="shop-button" href="#">Shop The Collection</a>
+                        </div>
+                        <h2>T-Shirt</h2>
+                        <p>Find affordable T-shirts for men from our selection of crew-neck, crop-neck, striped long
+                            sleeves.</p>
+                    </article>
+                </div>
+
+                <div class="service-grid">
+                    <article>
+                        <span class="service-icon">&#8644;</span>
+                        <h3>30 Days Return</h3>
+                        <p>Simply return it within 30 days for an exchange.</p>
+                    </article>
+                    <article>
+                        <span class="service-icon">&#9635;</span>
+                        <h3>Free Delivery</h3>
+                        <p>On orders over $200.</p>
+                    </article>
+                    <article>
+                        <span class="service-icon">&#9743;</span>
+                        <h3>Support 24/7</h3>
+                        <p>Contact us 24 hours a day, 7 days a week.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section products-section">
+            <div class="section-heading">
+                <h2>Gotta Have It</h2>
+                <nav>
+                    <a class="active" href="#">New Arrivals</a>
+                    <a href="#">Best Sellers</a>
+                    <a href="#">On Sale</a>
+                </nav>
+            </div>
+
+            <div class="product-shell">
+                <button class="round-nav left" aria-label="Previous products">&lsaquo;</button>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="public/images/bn_1_1512x.jpg" alt="Faux suede biker jacket">
+                        <h3>Faux suede biker jacket</h3>
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p><span>$348.00</span></p>
+                    </article>
+                    <article class="product-card">
+                        <img src="public/images/bn_3_1296x.jpg" alt="Pocketed denim jacket">
+                        <h3>Pocketed denim jacket</h3>
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p><span>$69.00</span></p>
+                    </article>
+                    <article class="product-card">
+                        <img src="public/images/bn_5_1512x.jpg" alt="Oversized jacket with denim panels">
+                        <h3>Oversized jacket with denim panels</h3>
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p><span>$133.00</span></p>
+                    </article>
+                </div>
+                <button class="round-nav right" aria-label="Next products">&rsaquo;</button>
+            </div>
+        </section>
+
+        <section class="wide-banner">
+            <img src="public/images/bn_4_bee301b8-f793-41b2-88a1-cc7b1fc8d0f0_1512x.jpg" alt="One fine day collection">
+            <div class="banner-copy">
+                <h2>One<br>Fine<br>Day</h2>
+                <a class="shop-button" href="#">Shop The Dresses Collection</a>
+            </div>
+        </section>
+
+        <section class="spotlight section">
+            <div class="spotlight-photo">
+                <img src="public/images/bn-2_676a7adf-ea7b-4fa1-8848-8517abdc2793_900x.jpg"
+                    alt="Model carrying a black bag">
+            </div>
+            <div class="spotlight-product">
+                <article>
+                    <img src="public/images/1_a0db46c5-9543-4f4d-a9cd-8436da10c542_900x.webp"
+                        alt="Shimmery mini skirt with ruching">
+                    <h3>Shimmery mini skirt with ruching</h3>
+                    <p>$89.00</p>
+                    <a class="add-button" href="#">Add To Bag</a>
+                </article>
+                <article class="mobile-extra-product">
+                    <img src="public/images/1_751dc619-60a9-4ec4-acfe-bad3a8e83ecb_900x.jpg"
+                        alt="Zipper detail shoulder bag">
+                    <h3>Zipper detail shoulder bag</h3>
+                    <p>$269.00</p>
+                    <a class="add-button" href="#">Add To Bag</a>
+                </article>
+                <div class="dots"><span></span><span></span><span></span></div>
+            </div>
+        </section>
+
+        <section class="story">
+            <p>Our Story</p>
+            <h2>&ldquo;Being perfectly well-dressed gives one a tranquillity that no religion can bestow&rdquo;</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Duis quam suspendisse ultrices gravida. Risus commodo viverra maecenas
+                accumsan.</span>
+        </section>
+
+        <section class="brands section">
+            <p>All About Us</p>
+            <h2>Trending Brands</h2>
+            <div class="brand-grid">
+                <article><img src="public/images/m-1_160x160@2x.png.webp" alt="Concrete base logo"><strong>Concrete
+                        Base</strong><span>Top brands 2021</span></article>
+                <article><img src="public/images/m-2_160x160@2x.png.webp" alt="Concrete base logo"><strong>Concrete
+                        Base</strong><span>Top brands 2021</span></article>
+                <article><img src="public/images/m-3_160x160@2x.png.webp" alt="Concrete base logo"><strong>Concrete
+                        Base</strong><span>Top brands 2021</span></article>
+                <article><img src="public/images/m-4_160x160@2x.png.webp" alt="Concrete base logo"><strong>Concrete
+                        Base</strong><span>Top brands 2021</span></article>
+                <article><img src="public/images/m-5_160x160@2x.png.webp" alt="Concrete base logo"><strong>Concrete
+                        Base</strong><span>Top brands 2021</span></article>
+                <article><img src="public/images/m-6_160x160@2x.png.webp" alt="Concrete base logo"><strong>Concrete
+                        Base</strong><span>Top brands 2021</span></article>
+            </div>
+        </section>
+
+        <section class="friends">
+            <div class="section-heading">
+                <h2>Let's Be Friends</h2>
+                <p>Follow us @Salehub</p>
+                <span>Show your style #salehubstyle<br>Show your pet's style #salehub.</span>
+            </div>
+            <p class="friends-copy">We obsessively search through boutiques, stores and posts that inspire us.</p>
+
+            <div class="insta-grid">
+                <img class="large" src="public/images/img-12-1_1920x1920.jpg" alt="Woman walking on the beach">
+                <img src="public/images/img-12-2_1920x1920.jpg" alt="Street style outfit">
+                <img src="public/images/img-12-3_1920x1920.jpg" alt="Casual travel style">
+                <img src="public/images/img-12-4_1920x1920.jpg" alt="Portrait fashion">
+                <img src="public/images/img-12-5_1728x.jpg" alt="Outdoor fashion">
+                <img src="public/images/img-12-6_1920x.jpg" alt="Denim look">
+                <img src="public/images/img-12-7_720x.jpg" alt="Editorial portrait">
+            </div>
+
+            <div class="trust-row">
+                <img src="public/images/paypal_240x.png" alt="Accepted payments">
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><svg><use href="#icon-facebook"></use></svg></a>
+                    <a href="#" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
+                    <a href="#" aria-label="Pinterest"><svg><use href="#icon-pinterest"></use></svg></a>
+                    <a href="#" aria-label="Vimeo"><svg><use href="#icon-vimeo"></use></svg></a>
+                    <a href="#" aria-label="Instagram"><svg><use href="#icon-instagram"></use></svg></a>
+                </div>
+                <img src="public/images/paypal_415b5ae4-daaf-4b21-9943-accf6f6bdb42_240x.png" alt="Payment options">
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <details open>
+                <summary>Informations</summary>
+                <a href="#">Customer Service</a>
+                <a href="#">Shipping and Delivery</a>
+                <a href="#">Returns</a>
+                <a href="#">Size Charts</a>
+                <a href="#">Email Signup</a>
+                <a href="#">Contact Us</a>
+            </details>
+            <details>
+                <summary>Customer Support</summary>
+                <a href="#">Customer Service</a>
+                <a href="#">Shipping and Delivery</a>
+                <a href="#">Returns</a>
+                <a href="#">Size Charts</a>
+                <a href="#">Email Signup</a>
+                <a href="#">Contact Us</a>
+            </details>
+            <details>
+                <summary>Our Shop</summary>
+                <a href="#">New Arrivals</a>
+                <a href="#">Top Trending</a>
+                <a href="#">Autumn Collection</a>
+                <a href="#">Back in Stock</a>
+                <a href="#">Best Tops</a>
+                <a href="#">Denim Jackets</a>
+            </details>
+            <details>
+                <summary>Newsletter</summary>
+                <p>Get 15% off your first purchase. Plus, be the first to know about sales, new product launches and
+                    exclusive offers.</p>
+                <form>
+                    <input type="email" placeholder="Email address">
+                    <button type="submit">Join</button>
+                </form>
+            </details>
+        </div>
+        <p class="copyright">Copyright &copy; 2021 Vinovathemes. All rights reserved.</p>
+        <a class="back-top" href="#" aria-label="Back to top">&#8963;</a>
+    </footer>
+</body>
+
+</html>
